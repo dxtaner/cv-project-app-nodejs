@@ -1,0 +1,31 @@
+{
+  "name": "cv-project-app-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "cv",
+    "project",
+    "me"
+  ],
+  "author": "dxtaner",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "dotenv-safe": "^8.2.0",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.0.0",
+    "util": "^0.12.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
