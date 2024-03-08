@@ -8,7 +8,7 @@ Installation
 
 1.  Clone the project:
 
-    git clone [https://github.com/user/project-name.git](https://github.com/dxtaner/cv-project-app-nodejs)
+    git clone [https://github.com/dxtaner/cv-project-app-nodejs.git](https://github.com/dxtaner/cv-project-app-nodejs)
 
 3.  Navigate to the project directory:
 
