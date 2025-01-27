@@ -2,61 +2,66 @@ Cv Project App
 ============
 
 This project is a platform aimed at facilitating the job search process between candidates and companies.
+The app provides different routes for managing candidates, companies, and administrative operations.
+
+Features
+--------
+
+*   Connects to MongoDB using Mongoose.
+*   Has API routes for handling candidates, companies, and admin operations.
+*   Implements CORS (Cross-Origin Resource Sharing) to allow cross-origin requests.
+*   Uses `dotenv-safe` for environment variable management.
 
 Installation
 ------------
 
-1.  Clone the project:
+1.  Clone the repository:
+    
+        git clone (https://github.com/dxtaner/cv-project-app-nodejs)
+    
+2.  Navigate to the project directory:
+    
+        cd your-repository
+    
+3.  Install the dependencies:
+    
+        npm install
+    
+4.  Create a `.env` file at the root of the project and define the MongoDB URL:
+    
+        MONGODB_URL=mongodb://your-database-url
+    
+5.  Run the application:
+    
+        npm start
+    
+    The app will start running on `http://localhost:3000`.
 
-    git clone [https://github.com/dxtaner/cv-project-app-nodejs.git](https://github.com/dxtaner/cv-project-app-nodejs)
+Routes
+------
 
-3.  Navigate to the project directory:
+*   **GET /**: Main route for the index.
+*   **GET /candidates**: Get all candidates.
+*   **POST /candidates**: Add a new candidate.
+*   **GET /companies**: Get all companies.
+*   **POST /companies**: Add a new company.
+*   **GET /admin**: Admin dashboard (protected route).
 
-    cd project-name
-
-5.  Install the necessary packages:
-
-    npm install
-
-7.  Database configuration:
-
-*   Install MongoDB database.
-*   Create a `.env` file and set the following variable:
-
-    MONGODB_URL=mongodb://user:password@localhost:27017/database_name
-
-9.  Start the server:
-
-    npm start
-
-Usage
------
-
-Once the project is running, you can access the API at `http://localhost:3000`.
-
-*   `/candidates`: API routes related to candidates.
-*   `/companies`: API routes related to companies.
-*   `/admin`: API routes for the admin panel.
-
-Contributing
+Dependencies
 ------------
 
-1.  Fork this repository.
-2.  Create a new branch:
+*   `express`: A fast, unopinionated, minimalist web framework for Node.js.
+*   `body-parser`: Middleware to parse incoming request bodies.
+*   `mongoose`: MongoDB object modeling for Node.js.
+*   `dotenv-safe`: A safe way to manage environment variables.
+*   `cors`: Middleware to enable Cross-Origin Resource Sharing.
 
-    git checkout -b feature/fixes
+Configuration
+-------------
 
-4.  Commit your changes:
-
-    git commit -am 'New feature: Description'
-
-6.  Push to your branch:
-
-    git push origin feature/fixes
-
-8.  Submit a pull request.
+The application expects an environment variable `MONGODB_URL` to be set in the `.env` file, which holds the MongoDB connection string.
 
 License
 -------
 
-This project is licensed under the MIT License. See the `LICENSE` file for more information.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
